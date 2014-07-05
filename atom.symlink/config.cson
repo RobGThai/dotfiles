@@ -12,15 +12,15 @@
     'tmp'
     'vendor'
   ]
-  'themes': [
-    'unity-ui'
-    'glacier-syntax'
-  ]
   'hideGitIgnoredFiles': true
   'disabledPackages': [
     'background-tips'
     'exception-reporting'
     'metrics'
+  ]
+  'themes': [
+    'atom-dark-ui'
+    'solarized-dark-syntax'
   ]
 'spell-check':
   'grammars': [
