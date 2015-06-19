@@ -37,4 +37,7 @@ do
   source $file
 done
 
+# Export custom PHP55 from Brew
+export PATH=/usr/local/Cellar/php55/5.5.21/bin/:$PATH
+
 unset config_files
