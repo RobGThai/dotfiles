@@ -113,6 +113,12 @@ set_prompt () {
 #     fi
 # }
 
+deactivate_virtualenv() {
+    if [ -e .devenv ]; then
+        deactivate
+    fi
+}
+
 has_virtualenv() {
     if [ -e .venv ]; then
         workon `cat .venv`
@@ -120,7 +126,7 @@ has_virtualenv() {
 }
 
 venv_cd () {
-    cd "$@" && has_virtualenv
+    cd "$@" && has_virtualenv && deactivate_virtualenv
 }
 
 # deactivate when leave
