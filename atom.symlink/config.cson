@@ -1,35 +1,84 @@
-'editor':
-  'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 13
-'core':
-  'excludeVcsIgnoredPaths': true
-  'ignoredNames': [
-    '.bundle'
-    '.git'
-    'log'
-    'repositories'
-    'tmp'
-    'vendor'
-  ]
-  'hideGitIgnoredFiles': true
-  'disabledPackages': [
-    'background-tips'
-    'exception-reporting'
-    'metrics'
-  ]
-  'themes': [
-    'atom-dark-ui'
-    'solarized-dark-syntax'
-  ]
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
-'release-notes':
-  'viewedVersion': '0.89.0'
-'tree-view': {}
+"*":
+  editor:
+    fontFamily: "Menlo"
+    showIndentGuide: true
+    invisibles:
+      {}
+    zoomFontWhenCtrlScrolling: true
+    fontSize: 18
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "go-plus"
+      "api-blueprint-preview"
+      "nuclide-click-to-symbol"
+      "nuclide-code-format"
+      "nuclide-file-tree"
+      "nuclide-flow"
+      "nuclide-hack"
+      "nuclide-hg-repository"
+      "nuclide-quick-open"
+      "nuclide-remote-projects"
+      "nuclide-ssh-dialog"
+      "nuclide-tabs"
+      "nuclide-type-hint"
+      "file-icons"
+    ]
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+    ]
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "api-blueprint-preview":
+    {}
+  "atom-alignment":
+    {}
+  "highlight-line":
+    underline: "dashed"
+    enableSelectionBorder: true
+  "go-plus":
+    goPath: '''
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    '''
+  "php-cs-fixer":
+    executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
+  "atom-beautify":
+    _analyticsUserId: "b9da7728-c401-4e31-8674-e6c035465bd4"
+  linter:
+    statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "pylint"
+    ]
+    lintDebug: true
+  "linter-pylint":
+    executable: "/usr/local/bin/pylint"
+  "autocomplete-python":
+    {}
+  "autocomplete-plus":
+    {}
+  nuclide:
+    remoteProjectsConfig: []
+  "nuclide-flow":
+    {}
+  "file-icons":
+    {}
