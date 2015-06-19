@@ -71,12 +71,63 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+dls () {
+ # directory LS
+ echo `ls -l | grep "^d" | awk '{ print $9 }' | tr -d "/"`
+}
+
+current_env() {
+  if ! [[ -z "$VIRTUAL_ENV" ]] then
+
+    # Supported color may be tested using this loop.
+    # for COLOR in {0..255}
+    # do
+    #     for STYLE in "38;5"
+    #     do
+    #         TAG="\033[${STYLE};${COLOR}m"
+    #         STR="${STYLE};${COLOR}"
+    #         echo -ne "${TAG}${STR}${NONE}  "
+    #     done
+    #     echo
+    # done
+
+    env_color="\033[38;5;238m"
+    echo "${env_color}Working on `basename \"$VIRTUAL_ENV\"`%{$reset_color%} "
+  fi
+}
+
+export PROMPT=$'\n$(current_env)$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
 
+# Support for bash
+# PROMPT_COMMAND='prompt'
+#
+# function prompt()
+# {
+#     if [ "$PWD" != "$MYOLDPWD" ]; then
+#         MYOLDPWD="$PWD"
+#         test -e .venv && workon `cat .venv`
+#     fi
+# }
+
+has_virtualenv() {
+    if [ -e .venv ]; then
+        workon `cat .venv`
+    fi
+}
+
+venv_cd () {
+    cd "$@" && has_virtualenv
+}
+
+# deactivate when leave
+alias cd="venv_cd"
+
 precmd() {
   title "zsh" "%m" "%55<...<%~"
+  # eval "$PROMPT_COMMAND"
   set_prompt
 }
