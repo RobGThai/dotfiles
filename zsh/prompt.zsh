@@ -114,7 +114,7 @@ set_prompt () {
 # }
 
 deactivate_virtualenv() {
-    if [ -e .devenv ]; then
+    if [ \( -e .devenv \) -a \( ! -z "$VIRTUAL_ENV" \) ]; then
         deactivate
     fi
 }
