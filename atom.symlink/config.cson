@@ -2,10 +2,9 @@
   editor:
     fontFamily: "Menlo"
     showIndentGuide: true
-    invisibles:
-      {}
+    invisibles: {}
     zoomFontWhenCtrlScrolling: true
-    fontSize: 18
+    fontSize: 15
   core:
     ignoredNames: [
       ".bundle"
@@ -48,17 +47,15 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
-  "api-blueprint-preview":
-    {}
-  "atom-alignment":
-    {}
+  "api-blueprint-preview": {}
+  "atom-alignment": {}
   "highlight-line":
     underline: "dashed"
     enableSelectionBorder: true
   "go-plus":
     goPath: '''
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     '''
   "php-cs-fixer":
     executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
@@ -72,13 +69,9 @@
     lintDebug: true
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
-  "autocomplete-python":
-    {}
-  "autocomplete-plus":
-    {}
+  "autocomplete-python": {}
+  "autocomplete-plus": {}
   nuclide:
     remoteProjectsConfig: []
-  "nuclide-flow":
-    {}
-  "file-icons":
-    {}
+  "nuclide-flow": {}
+  "file-icons": {}
