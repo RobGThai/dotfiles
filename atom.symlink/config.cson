@@ -4,7 +4,8 @@
     showIndentGuide: true
     invisibles: {}
     zoomFontWhenCtrlScrolling: true
-    fontSize: 15
+    showInvisibles: true
+    tabType: "soft"
   core:
     ignoredNames: [
       ".bundle"
@@ -32,10 +33,14 @@
       "nuclide-tabs"
       "nuclide-type-hint"
       "file-icons"
+      "pigments"
+      "minimap"
+      "autocomplete-php"
+      "linter-pep8"
     ]
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "solarized-seti-ui"
+      "batman-syntax"
     ]
   "spell-check":
     grammars: [
@@ -54,8 +59,8 @@
     enableSelectionBorder: true
   "go-plus":
     goPath: '''
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     '''
   "php-cs-fixer":
     executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
@@ -67,6 +72,7 @@
       "pylint"
     ]
     lintDebug: true
+    errorPanelHeight: 52
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
   "autocomplete-python": {}
@@ -75,3 +81,11 @@
     remoteProjectsConfig: []
   "nuclide-flow": {}
   "file-icons": {}
+  minimap: {}
+  "xml-formatter": {}
+  pigments: {}
+  "svg-preview": {}
+  "preview-plus": {}
+  "clipboard-plus": {}
+  "git-plus": {}
+  "keybinding-cheatsheet": {}
