@@ -6,6 +6,8 @@
     zoomFontWhenCtrlScrolling: true
     showInvisibles: true
     tabType: "soft"
+    fontSize: 15
+    softWrapAtPreferredLineLength: true
   core:
     ignoredNames: [
       ".bundle"
@@ -42,6 +44,12 @@
       "solarized-seti-ui"
       "batman-syntax"
     ]
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+    ]
   "spell-check":
     grammars: [
       "text.plain"
@@ -59,8 +67,8 @@
     enableSelectionBorder: true
   "go-plus":
     goPath: '''
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+
     '''
   "php-cs-fixer":
     executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
