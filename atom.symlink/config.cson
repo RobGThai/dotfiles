@@ -1,14 +1,30 @@
 "*":
-  editor:
-    fontFamily: "Menlo"
-    showIndentGuide: true
-    invisibles: {}
-    zoomFontWhenCtrlScrolling: true
-    showInvisibles: true
-    tabType: "soft"
-    fontSize: 15
-    softWrapAtPreferredLineLength: true
+  "advanced-open-file":
+    createDirectories: true
+    fuzzyMatch: true
+    helmDirSwitch: true
+  "api-blueprint-preview": {}
+  "atom-alignment": {}
+  "atom-beautify":
+    _analyticsUserId: "b9da7728-c401-4e31-8674-e6c035465bd4"
+  "autocomplete-elixir":
+    elixirPath: "/Users/RobGThai/.exenv/shims/elixir"
+    erlangHome: "/usr/local/Cellar/erlang/18.3/bin"
+  "autocomplete-plus": {}
+  "autocomplete-python":
+    useSnippets: "required"
+  "clipboard-plus": {}
   core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "linter-pylint"
+      "linter-pep8"
+      "atom-autocomplete-php"
+      "autocomplete-elixir"
+    ]
+    hideGitIgnoredFiles: true
     ignoredNames: [
       ".bundle"
       ".git"
@@ -17,83 +33,60 @@
       "tmp"
       "vendor"
     ]
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "go-plus"
-      "api-blueprint-preview"
-      "nuclide-click-to-symbol"
-      "nuclide-code-format"
-      "nuclide-file-tree"
-      "nuclide-flow"
-      "nuclide-hack"
-      "nuclide-hg-repository"
-      "nuclide-quick-open"
-      "nuclide-remote-projects"
-      "nuclide-ssh-dialog"
-      "nuclide-tabs"
-      "nuclide-type-hint"
-      "file-icons"
-      "pigments"
-      "minimap"
-      "autocomplete-php"
-      "linter-pep8"
+    packagesWithKeymapsDisabled: [
+      "iex"
     ]
     themes: [
       "solarized-seti-ui"
       "batman-syntax"
     ]
-    hideGitIgnoredFiles: true
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
+  editor:
+    fontFamily: "Menlo"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: true
+  "file-icons": {}
+  "git-plus": {}
+  "go-plus":
+    goPath: '''
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    '''
+  "highlight-line":
+    enableSelectionBorder: true
+    underline: "dashed"
+  "keybinding-cheatsheet": {}
+  linter:
+    errorPanelHeight: 52
+    lintDebug: true
+    statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "pylint"
     ]
+  "linter-elixirc": {}
+  "linter-pylint":
+    executable: "/usr/local/bin/pylint"
+  minimap: {}
+  nuclide:
+    remoteProjectsConfig: []
+  "nuclide-flow": {}
+  "php-cs-fixer":
+    executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
+  pigments: {}
+  "preview-plus": {}
+  "python-tools": {}
+  "release-notes":
+    viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
     ]
+  "svg-preview": {}
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "api-blueprint-preview": {}
-  "atom-alignment": {}
-  "highlight-line":
-    underline: "dashed"
-    enableSelectionBorder: true
-  "go-plus":
-    goPath: '''
-
-
-    '''
-  "php-cs-fixer":
-    executablePath: "/usr/local/Cellar/php-cs-fixer/1.2/libexec/php-cs-fixer.phar"
-  "atom-beautify":
-    _analyticsUserId: "b9da7728-c401-4e31-8674-e6c035465bd4"
-  linter:
-    statusBar: "Show error if the cursor is in range"
-    subtleLinterErrors: [
-      "pylint"
-    ]
-    lintDebug: true
-    errorPanelHeight: 52
-  "linter-pylint":
-    executable: "/usr/local/bin/pylint"
-  "autocomplete-python": {}
-  "autocomplete-plus": {}
-  nuclide:
-    remoteProjectsConfig: []
-  "nuclide-flow": {}
-  "file-icons": {}
-  minimap: {}
   "xml-formatter": {}
-  pigments: {}
-  "svg-preview": {}
-  "preview-plus": {}
-  "clipboard-plus": {}
-  "git-plus": {}
-  "keybinding-cheatsheet": {}
