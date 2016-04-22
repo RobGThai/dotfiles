@@ -41,4 +41,9 @@ done
 # Export custom PHP55 from Brew
 export PATH=/usr/local/Cellar/php55/5.5.21/bin/:$PATH
 
+# Configure pyenv
+export PYENV_ROOT=~/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+
 unset config_files
